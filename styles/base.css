@@ -13,6 +13,10 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header  #course-title{
@@ -30,7 +34,7 @@ header  #course-title{
 #nav-menu li{
     flex: 1 1 auto;
 }
-#nav-menu li:hover {
+#nav-menu a:hover {
     background-color: #e2e8fcc2;
     border-radius: 10px;
     transition: background 0.2s;
