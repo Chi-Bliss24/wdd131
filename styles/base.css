@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #1E3A8A;    
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+header  #course-title{
+    font-size: 20pt;
+    padding: 0.2rem;
+    display: block ;
+}
+#nav-menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+#nav-menu li{
+    flex: 1 1 auto;
+}
+#nav-menu li:hover {
+    background-color: #e2e8fcc2;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+#nav-menu a{
+    display: block;
+    color: #222222;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+section{
+
+    padding: 1rem;
+    background-color: #F3F4F6;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card{
+    background-color: #F3F4F6;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+  /* background-color: #ffffff; */
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+#about-me{
+    padding: 0.5rem;
+    display: flex;
+    gap: 20px;
+}
+#about-me p{
+    flex: 2;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#about-me img{
+    
+    border-radius: 10px;
+}
+.card #resources-links{
+    list-style: none;
+    padding: 0;
+}
+#resources-links a{
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: #1E3A8A;
+    line-height: 1.8;
+    font-size: 13pt;
+}
+footer{
+    height: auto;
+    padding: 1rem;
+    color: rgb(36, 36, 36);
+    background-color: #dfe9fd;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /* Stack vertically */
+  }
+}
