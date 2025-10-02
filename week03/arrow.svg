@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="12" cy="12" r="10" fill="none" stroke="#8071c2ff" stroke-width="2"/>
+	<polyline points="8,12 12,16 16,12" fill="none" stroke="#a54141ff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2"/>
+	<line x1="12" y1="7" x2="12" y2="16" stroke="#d8ff9aff" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+<!-- 1. What is the purpose of the viewBox attribute?
+It defines the coordinate system for the SVG view box. The first two values are the x and y coordinates of the top-left corner of the view box. The last two values are the width and height of the view box. -->
+
+<!-- The native width and height of this graphic is 24 pixels by 24 pixels. viewBox="0 0 24 24" -->
+
+
+<!--2. What is the purpose of the fill attribute?
+ It defines the color used to fill the shape. The value fill="none" means that the shape is not filled. -->
+
+<!--3.  What is the purpose of the stroke attribute?
+ It defines the color used for the lines of the shape. The value stroke="#555" is a gray color. -->

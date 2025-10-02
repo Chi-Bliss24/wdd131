@@ -32,3 +32,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
+// Calculate and display wind chill if applicable
+let temperature = 10;   // °C
+let windSpeed = 12;    // km/h
+
+// Function to calculate wind chill (Environment Canada formula)
+function calculateWindChill(tempC, speedKmh) {
+  return (
+    13.12 +
+    0.6215 * tempC -
+    11.37 * Math.pow(speedKmh, 0.16) +
+    0.3965 * tempC * Math.pow(speedKmh, 0.16)
+  );
+}
+
+// Check if conditions are valid for calculation
+let windChillValue = "N/A";
+if (temperature <= 10 && windSpeed > 4.8) {
+  windChillValue = calculateWindChill(temperature, windSpeed).toFixed(1) + " °C";
+}
+
+// Display result in the page
+document.querySelector("#windchill").textContent = windChillValue;

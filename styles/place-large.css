@@ -1,0 +1,50 @@
+@media screen and (min-width: 750px) {
+    header h1{
+        font-size: 3.5rem;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .hero{
+        position: relative;
+        max-width: 1300px;
+        margin: 0 auto;
+
+    }
+    .hero img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .data-section, .weather-section{
+        margin: .5rem ;
+        padding: 1rem;
+        background-color: var(--clr-primary-dark);
+        color: var(--clr-secondary);
+    }
+    .data-section{
+        width: 400px;
+        position: absolute;
+        left: 3%;
+        top: 20%;
+    }
+    .weather-section{
+        width: 400px;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+    }
+    .weather-section h2::after {
+    content: '🌤';
+    display: inline;
+    width: 48px;
+    height: 48px;
+    margin-left: 15px ;
+    vertical-align: middle;
+    }
+    .cloudy-icon{
+        display: none;
+    }
+}

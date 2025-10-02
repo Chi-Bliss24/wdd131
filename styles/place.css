@@ -1,0 +1,83 @@
+
+:root{
+    --clr-primary: #217400;
+    --clr-secondary: #ffffff;
+    --clr-primary-dark: #24520ba4;
+    --ff-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header ,footer{
+    background-color: var(--clr-secondary);
+    border: 1px rgb(201, 201, 255);
+    border-radius: 15px;
+    text-align: center;
+    margin: .5rem ;
+    padding: 0.5rem;
+    box-shadow: 0px 5px 10px rgba(2, 2, 2, 0.295);
+}
+
+header h1{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: var(--clr-primary);
+}
+.text-border{
+     color: white;                /* fill color */
+    -webkit-text-stroke: 1px #2a9600; /* stroke width + color */
+}
+.hero img{
+    width: 100%;
+}
+.hero{
+    position: relative;
+}
+.data-section, .weather-section{
+    margin: .5rem ;
+    padding: 1rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.data-section h2, .weather-section h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 1rem; /* row gap | column gap */
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0; /* remove default browser indent */
+}
+
+
+
+.cloudy-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(25, 131, 120);
+}

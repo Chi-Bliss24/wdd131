@@ -1,0 +1,8 @@
+.hero img{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+/*object-fit:cover; - this will crop the image to fit the container without distorting it */
+/* object-fit: contain; - this will fit the entire image within the container without cropping it, but may leave empty space */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    
+    <main>
+        <div class="hero">
+            <div id="hero-txt">
+
+            </div>
+            <p></p>
+            <picture>
+                <source media="(min-width: 1100px)" srcset="images/hero-medi.webp">
+                <source media="(min-width: 550px)" srcset="images/hero-medi2.webp">
+                <img src="images/hero-small.webp" alt="picture of rome italy temple" width="400" height="200">
+            </picture>
+        </div>
+       <!-- Why are img width and height necessary?
+        Some of the most common causes of a layout shift or reflow during the rendering of a page are images, ads, embeds, and iframes without 
+        dimensions. "Layout shifts can be distracting to users. Imagine you've started reading an article when all of a sudden elements shift around the page, throwing you off
+         and requiring you to find your place again. This is very common on the web, including when reading the news, or trying to click those 'Search' or 'Add to Cart' buttons. 
+         Such experiences are visually jarring and frustrating. They are often caused when visible elements are forced to move because another element was suddenly added to the page or resized." -->
+    </main>
+    <script src="functions.js"></script>
+    <script src="functions1.js"></script>
+</body>
+</html>
